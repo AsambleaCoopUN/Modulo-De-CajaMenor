@@ -5,20 +5,21 @@
     <meta name="author" content="Desarrolladores: Andres Cardenas y Jeisson Velosa, Base de datos: Miguel Castañeda">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Generador de Consecutivos">
+    <meta name="description" content="Caja Menos">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheets/style.css" >
+    <link rel="stylesheet" href="../stylesheets/styleindex.css" >
     <!--Titulo-->
     <title>Caja Menor</title> 
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="../images/favicon_cpun.png">
   </head>
 <body>
-  <head>
+  <header class="container">
     <nav class="navbar navbar-expand-md">
       <div>
         <!-- Botón dispositivos móviles -->
@@ -35,7 +36,7 @@
         </div>
       </div>
     </nav>
-  </head>
+  </header>
 
   <main class="main">
     <section class="main-section_cabecera">   
@@ -44,6 +45,21 @@
           <h1>Caja Menor</h1>
         </div>
       </div>
+    </section>
+    <section class="main-section_form">
+      <form class="form_box" action="/server" method="post">
+        <div class="main-section_form-label" >
+          <label class="form-label" for="user">Usuario:
+            <input class="form-input" id="user" name="user" type="text" placeholder="Usuario" maxlength="20"/>
+          </label>
+          <label class="form-label" for="password">Contraseña:
+            <input type="password" class="form-input" id="pass" name="pass" aria-describedby="pass" placeholder="Contraseña" maxlength="20" required>
+          </label>
+        </div>
+        <div class="form_button">
+          <button class="btn btningresar" type="submit">Ingresar</button>
+        </div>
+      </form>
     </section>
 
   </main>

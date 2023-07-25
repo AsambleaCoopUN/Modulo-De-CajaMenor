@@ -19,7 +19,8 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 
 app.get('/logout', (req, res) => {
-  res.clearCookie('usercookie')
+  res.clearCookie('usercookie');
+  res.clearCookie('namecookie');
   res.render('login');
 });
 
