@@ -1,1 +1,74 @@
-<h1>esto es la vista para los usuarios</h1>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Desarrolladores: Andres Cardenas y Jeisson Velosa, Base de datos: Miguel Castañeda">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Caja Menos">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/style.css" >
+    <!-- <link rel="stylesheet" href="../stylesheets/styleindex.css" > -->
+    <!--Titulo-->
+    <title>Caja Menor</title> 
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images/favicon_cpun.png">
+  </head>
+  <body class="container">
+    <header>
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <!-- Botón dispositivos móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Logotipo y enlaces de navegación -->
+          <div class="collapse navbar-collapse" id="menu">
+            <a class="navbar-brand">
+              <figure>
+                <img src="../images/logo_cpun_02.png" width="250" alt="Logo de la página web">
+              </figure>
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href='#'>Cargar caja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='#'>Consultar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='/logout'>Salida</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main-section_cabecera">   
+        <div id="cabecera" class="d-flex flex-column justify-content-center align-items-center" >
+          <div class="row col-lg-12">
+            <h1>Caja Menor </h1>
+          </div>
+        </div>
+      </section>
+      <section class="main-section_form">
+
+      </section>
+    </main>
+
+</body>
+
+<!-- javascripts-->
+<script src="/js/jquery-3.6.3.min.js"></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+<script src="/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./main.js"></script>
+</html>
